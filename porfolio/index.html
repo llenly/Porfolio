@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- <script src="https://kit.fontawesome.com/d8844b05f9.js" crossorigin="anonymous"></script> -->
+  <title>Portfolio Personal</title>
+</head>
+
+<body class="dark">
+  <header class="header">
+    <!-- para hacer el responsive -->
+    <div class="switches">
+      <!-- para activar el modo oscuro y el modo claro -->
+      <div id="toggle-theme" class="toggle-theme">
+        <img id="toggle-icon" src="assets/icons/moon.svg" alt="icon theme" class="toggle-theme__icon">
+
+        <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
+
+      </div>
+    </div>
+    <div>
+      <h1 class="title">Portafolio</h1>
+    </div>
+    <div id="flags" class="flags">
+       <div class="flags__item" data-language="en">
+         <img src="assets/icons/gb.svg" class="flags__img" alt="ingles"/>
+       </div>
+
+       <div class="flags__item" data-language="es">
+        <img src="assets/icons/ea.svg" class="flags__img" alt="español"/>
+      </div>
+    </div>
+    <!-- contenedor para los colores -->
+    <div id="toggle-colors" class="colors">
+      <!-- estos div se quedan vacios porque solo represednta el color
+        y pasarle la informacion por js mediante la data para asignar ese valor a la variable -->
+      <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
+      <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div>
+      <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
+      <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"></div>
+      <div data-color="hsl(0, 83%, 50%)" class="colors__item colors__item--red"></div>
+    </div>
+
+  </header>
+
+  <!-- PARTE PRINCIPAL -->
+  <main class="main">
+
+    <!-- COLUMNA IZQURDA CON TARGETA D PRESNETACION Y ALGO MAS -->
+    <section class="column column--left">
+      <!-- TARGETA DE PRESENTACION -->
+      <!-- PARTE DE TARGETA CON LA IMAGEN -->
+      <article class="card card-profile">
+        <div class="card__image-container">
+          <img src="assets/images/profile.jpg">
+        </div>
+        <!-- PARTE DEL HEADER O ENCABEZADO DE LA TARGETA O CARD 
+        los  data-section y data-value trabajan con js para cambiar el idioma-->
+        <div class="card__header">
+          <h2 class="card__title">Llenly Lisaso Nuñez</h2>
+          <p class="card__subtitle" data-section="profile" data-value="rol">Front End Developer</p>
+        </div>
+        <!-- PARTE DEL BODY DE LA TARGETA -->
+        <div class="card__body">
+          <div class="card__link">
+            <i class=" fa-solid fa-envelope icon"></i>
+            <a href="mailto:llenly1985@gmail.com">llenly1985@gmail.com</a>
+          </div>
+
+          <div class="card__link">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:622221552"> +34 622221552</a>
+          </div>
+
+          <!-- PARTE DEL DESCIPCION DE LA TARGETA -->
+          <p class="card__text" data-section="profile" data-value="description">
+            Formacion autodidacta, capacidad de aprendizaje y buena actitud para el trabajo en equipo, proactiva,
+            resolutiva y nivel alto de compromiso
+            Formacion autodidacta, capacidad de aprendizaje y buena actitud para el trabajo en equipo, proactiva,
+            resolutiva y nivel alto de compromiso
+          </p>
+
+        </div>
+
+      </article>
+
+      <!-- TARGETA DE ESTUDIOS -->
+      <article class="card card--experience">
+        <h2 class="card__title">Estudios</h2>
+        <div class="experience">
+          <!-- <img src="assets/images/logo.png" alt="logo" class="experience__image"> -->
+          <div class="experience__info">
+            <h3 class="experience__job"> ILERNA FP ONLINE</h3>
+            <p class="experience__time">
+             Septiembre 2021 --Current
+            </p>
+
+            <p class="experience__description">Formacion Profesional Desarrollador Web :</p>
+          </div>
+
+        </div>
+
+        <div class="experience">
+          <!-- <img src="assets/images/logo.png" alt="logo" class="experience__image"> -->
+          <div class="experience__info">
+            <h3 class="experience__job"> CIC Formación</h3>
+            <p class="experience__time">
+             Septiembre 2021 --Current
+            </p>
+
+            <p class="experience__description">Certificado Profesional de Desarrollo Web:</p>
+          </div>
+
+        </div>
+      </article>
+   
+
+      <!-- TARGETA DE EXPERIENCIA -->
+      <article class="card card--experience">
+        <h2 class="card__title">Experiencia</h2>
+        <div class="experience">
+          <!-- <img src="assets/images/logo.png" alt="logo" class="experience__image"> -->
+          <div class="experience__info">
+           
+            <h3 class="experience__job"data-section="profile" data-value="rol">Experiencia de trabajo</h3>
+
+            <p class="experience__time">
+              Marzo 2020 --Current
+            </p>
+            <p class="experience__description"data-section="profile" data-value="description">Actualmente no tengo experiencia, auque he desarrollado varios proyectos con la guia de cursos de udemy</p>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+
+    <!-- SEGUNDA COLUMNA SKILLS-->
+    <section class="column column--right">
+
+      <!-- PRIMER COLUMNA FRONT END-->
+      <article class="card">
+        <h2 class="card__title">Front End</h2>
+        <small>Años de Experiencia</small>
+        <div class="skills">
+          <div class="skills__header">
+            <span class="skills__star-level">0</span>
+            <span class="skills__star-level">5</span>
+
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">HTML</p>
+            <!-- div para la barra de porgreso y la cantidad que va a rellenar la barra se crea con css -->
+            <div class="skills__bar skills__bar--80"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">CSS</p>
+            <!-- div para la barra de porgreso y la cantidad que va a rellenar la barra se crea con css -->
+            <div class="skills__bar skills__bar--70"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">JavaScript</p>
+            <!-- div para la barra de porgreso y la cantidad que va a rellenar la barra se crea con css -->
+            <div class="skills__bar skills__bar--60"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">PHP</p>
+            <!-- div para la barra de porgreso y la cantidad que va a rellenar la barra se crea con css -->
+            <div class="skills__bar skills__bar--60"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">VueJs</p>
+            <!-- div para la barra de porgreso y la cantidad que va a rellenar la barra se crea con css -->
+            <div class="skills__bar skills__bar--30"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">React</p>
+            <!-- div para la barra de porgreso y la cantidad que va a rellenar la barra se crea con css -->
+            <div class="skills__bar skills__bar--10"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- SEGUNDA TAREGETA PARA BACKEND -->
+      <article class="card">
+        <h2 class="card__title">Back End</h2>
+        <small>Años de Experiencia</small>
+
+        <div class="skills">
+          <div class="skills__header">
+            <span class="skills__star-level">0</span>
+            <span class="skills__star-level">5</span>
+
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Bases de Datos</p>
+            <!-- div para la barra de porgreso y la cantidad que va a rellenar la barra se crea con css -->
+            <div class="skills__bar skills__bar--70"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Mysql</p>
+            <!-- div para la barra de porgreso y la cantidad que va a rellenar la barra se crea con css -->
+            <div class="skills__bar skills__bar--60"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">WordPress</p>
+            <!-- div para la barra de porgreso y la cantidad que va a rellenar la barra se crea con css -->
+            <div class="skills__bar skills__bar--60"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- TERCERA TAREGETA PARA CONOCIMIENTOS GENERALES -->
+      <article class="card">
+        <h2 class="card__title">Conocimientos Generales</h2>
+        <small>Años de Experiencia</small>
+
+        <div class="skills">
+          <div class="skills__header">
+            <span class="skills__star-level">0</span>
+            <span class="skills__star-level">4</span>
+
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Ingles</p>
+            <!-- div para la barra de porgreso y la cantidad que va a rellenar la barra se crea con css -->
+            <div class="skills__bar skills__bar--80"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Git</p>
+            <!-- div para la barra de porgreso y la cantidad que va a rellenar la barra se crea con css -->
+            <div class="skills__bar skills__bar--30"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">WebPack, Gulp</p>
+            <!-- div para la barra de porgreso y la cantidad que va a rellenar la barra se crea con css -->
+            <div class="skills__bar skills__bar--30"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- SEGUNDA FILA PARA PROYECTOS -->
+
+      <article class="card card--project">
+        <div class="card__image-container">
+          <h2 class="card__title">Nombre del proyecto</h2>
+          <img src="assets/images/project.jpg" alt="landing page" class="card__imageproject">
+        </div>
+        <div class="project">
+
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+
+            <span class="project__tag">#PHP</span>
+            <span class="project__tag">#JavaScript</span>
+          </div>
+
+
+          <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, qui velit. Soluta
+            praesentium illo minima repellat eum. Porro eum aliquam voluptatibus sed explicabo expedita nam eligendi
+            nisi vitae, voluptate voluptates?
+           </p>
+
+          <div class="buttons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Codigo</a>
+          </div>
+        </div>
+
+      </article>
+      <article class="card card--project">
+        <h2 class="card__title">Pagina Principal</h2>
+        <div class="card__image-container">
+          <img src="assets/images/project.jpg" alt="landing page" class="card__imageproject">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#BOOSTRAP</span>
+
+            <span class="project__tag">#JavaScript</span>
+          </div>
+
+
+          <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, qui velit. Soluta
+            praesentium illo minima repellat eum. Porro eum aliquam voluptatibus sed explicabo expedita nam eligendi
+            nisi vitae, voluptate voluptates?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, qui velit. Soluta
+            praesentium illo minima repellat eum. Porro eum aliquam voluptatibus sed explicabo expedita nam eligendi
+            nisi vitae, voluptate voluptates?</p>
+
+          <div class="buttons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Codigo</a>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="card card--project">
+        <div class="card__image-container">
+          <h2 class="card__title">Pagina Principal</h2>
+          <img src="assets/images/project.jpg" alt="landing page" class="card__imageproject">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#BOOSTRAP</span>
+
+          </div>
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#BOOSTRAP</span>
+
+          </div>
+
+
+
+          <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, qui velit. Soluta
+            praesentium illo minima repellat eum. Porro eum aliquam voluptatibus sed explicabo expedita nam eligendi
+            nisi vitae, voluptate voluptates?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, qui velit. Soluta
+            praesentium illo minima repellat eum. Porro eum aliquam voluptatibus sed explicabo expedita nam eligendi
+            nisi vitae, voluptate voluptates?</p>
+
+          <div class="buttons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Codigo</a>
+          </div>
+        </div>
+
+      </article>
+
+
+      <article class="card card--project">
+        <div class="card__image-container">
+          <h2 class="card__title">Pagina Principal</h2>
+          <img src="assets/images/project.jpg" alt="landing page" class="card__imageproject">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#BOOSTRAP</span>
+
+          </div>
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#BOOSTRAP</span>
+
+          </div>
+
+
+
+          <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, qui velit. Soluta
+            praesentium illo minima repellat eum. Porro eum aliquam voluptatibus sed explicabo expedita nam eligendi
+            nisi vitae, voluptate voluptates?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, qui velit. Soluta
+            praesentium illo minima repellat eum. Porro eum aliquam voluptatibus sed explicabo expedita nam eligendi
+            nisi vitae, voluptate voluptates?</p>
+
+          <div class="buttons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Codigo</a>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="card card--project">
+        <div class="card__image-container">
+          <h2 class="card__title">Pagina Principal</h2>
+          <img src="assets/images/project.jpg" alt="landing page" class="card__imageproject">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#BOOSTRAP</span>
+
+          </div>
+
+          <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, qui velit. Soluta
+            praesentium illo minima repellat eum. Porro eum aliquam voluptatibus sed explicabo expedita nam eligendi
+            nisi vitae, voluptate voluptates?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, qui velit. Soluta
+            praesentium illo minima repellat eum. Porro eum aliquam voluptatibus sed explicabo expedita nam eligendi
+            nisi vitae, voluptate voluptates?</p>
+
+          <div class="buttons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Codigo</a>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="card card--project">
+        <div class="card__image-container">
+          <h2 class="card__title">Pagina Principal</h2>
+          <img src="assets/images/project.jpg" alt="landing page" class="card__imageproject">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#BOOSTRAP</span>
+
+          </div>
+
+          <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, qui velit. Soluta
+            praesentium illo minima repellat eum. Porro eum aliquam voluptatibus sed explicabo expedita nam eligendi
+            nisi vitae, voluptate voluptates?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, qui velit. Soluta
+            praesentium illo minima repellat eum. Porro eum aliquam voluptatibus sed explicabo expedita nam eligendi
+            nisi vitae, voluptate voluptates?</p>
+
+          <div class="buttons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Codigo</a>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="card card--project">
+        <div class="card__image-container">
+          <h2 class="card__title">Pagina Principal</h2>
+          <img src="assets/images/project.jpg" alt="landing page" class="card__imageproject">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#BOOSTRAP</span>
+
+          </div>
+
+          <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, qui velit. Soluta
+            praesentium illo minima repellat eum. Porro eum aliquam voluptatibus sed explicabo expedita nam eligendi
+            nisi vitae, voluptate voluptates?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, qui velit. Soluta
+            praesentium illo minima repellat eum. Porro eum aliquam voluptatibus sed explicabo expedita nam eligendi
+            nisi vitae, voluptate voluptates?</p>
+
+          <div class="buttons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Codigo</a>
+          </div>
+        </div>
+
+      </article>
+
+    </section>
+
+  </main>
+
+
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
